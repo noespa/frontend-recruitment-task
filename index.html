@@ -21,8 +21,19 @@
             <h1>Lorem ipsum</h1>
             <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy
                 infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-            <button type="button" class="open-modal-button" data-open="modal1">Button</button>
+            <button type="button" class="open-modal-button" data-open="modal">Button</button>
         </aside>
     </div>
-
+    <div class="modal" id="modal" data-closable>
+        <div class="modal-dialog">
+            <div class="modal-container">
+                <header class="modal-header">
+                    <h1>Alert!</h1>
+                    <span class="close-modal" aria-hidden="true">&times;</span>
+                </header>
+                <section class="modal-content">You have clicked X times to related button.</section>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
 </body>

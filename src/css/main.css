@@ -57,3 +57,71 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 0.35s ease-in;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 920px;
+    height: 210px;
+    overflow: auto;
+    cursor: default;
+    background: rgba(255, 255, 255, 1);
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 95px;
+    padding-right: 46px;
+    padding-top: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.modal-header h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.modal-content {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
