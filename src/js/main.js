@@ -28,16 +28,16 @@ document.addEventListener("click", e => {
     }
 });
 document.addEventListener("click", e => {
-    if (e.target == document.querySelector(".close-modal")) {
+    if (e.target == document.querySelector(".close-x")) {
         document.querySelector(".modal.is-visible").classList.remove(isVisible);
     }
 });
 document.addEventListener("click", e => {
     if (e.target == document.querySelector(".reset-count-button.is-visible")) {
+        document.querySelector(".reset-count-button.is-visible").classList.remove(isVisible);
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
         clickCount = 0;
         localStorage.setItem('clickCount', clickCount)
-        document.querySelector(".modal.is-visible").classList.remove(isVisible);
-        document.querySelector(".reset-count-button.is-visible").classList.remove(isVisible);
         
     }
 });
