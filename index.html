@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/css/main.css">
+    <!-- <link rel="stylesheet" href="src/css/main.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -13,29 +13,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <aside class="picture">
-            <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg" alt="Sunrise photo" width="505" height="330">
-        </aside>
-        <article class="main">
-            <h1>Lorem ipsum</h1>
-            <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy
-                infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-            <button type="button" class="open-modal-button" data-open="modal">Button</button>
-        </article>
-    </div>
-    <div class="modal" id="modal" data-closable>
-        <div class="modal-dialog">
-            <div class="modal-container">
-                <span class="close-modal" aria-hidden="true"><span class="close-x">&times;</span></span>
-                <header class="modal-header">
-                    <h1>Alert!</h1>
-                </header>
-                <section class="modal-content">You have clicked <span id="click-count"></span> times to related
-                    button.</section>
-                <button class="reset-count-button" id="resetCountButton">Restart</button>
-            </div>
-        </div>
-    </div>
+
+    <frontend-component>
+        <div slot="title">Lorem ipsum</div>
+        <div slot="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa deserunt cum, magni quas
+            iusto molestiae eveniet aspernatur aliquam dolorem nobis, vel quia a ea error impedit enim. Similique,
+            accusantium.</div>
+    </frontend-component>
+    <frontend-component>
+        <div slot="title">Second component</div>
+        <div slot="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores omnis fuga.
+            Delectus nulla est eaque culpa adipisci enim aut dicta magni a consequuntur recusandae, minus fugit iusto
+            odio nisi.</div>
+    </frontend-component>
+
+
     <script src="src/js/main.js"></script>
 </body>
